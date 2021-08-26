@@ -28,7 +28,7 @@ public class FunkActivity extends AppCompatActivity {
         songs.add(new Songs("Rock Steady", "Aretha Franklin"));
         songs.add(new Songs("Stomp!", "The Brothers Johnson"));
 
-        SongsAdapter adapter = new SongsAdapter(this,songs);
+        SongsAdapter adapter = new SongsAdapter(this, songs);
 
         ListView listView = findViewById(R.id.song_list);
 

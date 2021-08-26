@@ -15,7 +15,7 @@ public class SongsAdapter extends ArrayAdapter<Songs> {
      * Create a new SongsAdapter object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param songs is the list of songs to be displayed.
+     * @param songs   is the list of songs to be displayed.
      */
     public SongsAdapter(Activity context, ArrayList<Songs> songs) {
         super(context, 0, songs);
@@ -26,7 +26,7 @@ public class SongsAdapter extends ArrayAdapter<Songs> {
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }

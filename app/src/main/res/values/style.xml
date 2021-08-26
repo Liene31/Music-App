@@ -7,7 +7,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
         <item name="fontFamily">@font/almendra_bold_italic</item>
-        <item name="android:textSize">20pt</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="musicPlayerTextViewArtist">

@@ -5,20 +5,24 @@ import android.os.Parcelable;
 
 public class Songs implements Parcelable {
 
-    /** Title of the song */
+    /**
+     * Title of the song
+     */
     private String mTitle;
 
-    /** Artist of the song */
+    /**
+     * Artist of the song
+     */
     private String mArtist;
 
     /**
      * Create a new Song object.
      *
-     * @param title is the title of the song
+     * @param title  is the title of the song
      * @param artist is the artist of the song
      */
 
-    public Songs (String title, String artist) {
+    public Songs(String title, String artist) {
         mTitle = title;
         mArtist = artist;
     }

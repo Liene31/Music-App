@@ -28,7 +28,7 @@ public class RockActivity extends AppCompatActivity {
         songs.add(new Songs("Iron Man", "Black Sabbath"));
         songs.add(new Songs("Roadhouse Blues", "The Doors"));
 
-        SongsAdapter adapter = new SongsAdapter(this,songs);
+        SongsAdapter adapter = new SongsAdapter(this, songs);
 
         ListView listView = findViewById(R.id.song_list);
 

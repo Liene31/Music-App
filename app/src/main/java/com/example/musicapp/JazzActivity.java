@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
+
 import java.util.ArrayList;
 
 
@@ -29,7 +30,7 @@ public class JazzActivity extends AppCompatActivity {
         songs.add(new Songs("Sing, Sing, Sing", "Benny Goodman"));
         songs.add(new Songs("A Night in Tunisia", "Dizzy Gillespie"));
 
-        SongsAdapter adapter = new SongsAdapter(this,songs);
+        SongsAdapter adapter = new SongsAdapter(this, songs);
 
         ListView listView = findViewById(R.id.song_list);
 

@@ -20,19 +20,19 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a click listener on that Jazz View
         textViewJazzActivity.setOnClickListener(v -> {
-            Intent jazzIntent = new Intent(MainActivity. this, JazzActivity.class);
+            Intent jazzIntent = new Intent(MainActivity.this, JazzActivity.class);
             startActivity(jazzIntent);
         });
 
         // Set a click listener on that Rock View
         textViewRockActivity.setOnClickListener(v -> {
-            Intent rockIntent = new Intent(MainActivity. this, RockActivity.class);
+            Intent rockIntent = new Intent(MainActivity.this, RockActivity.class);
             startActivity(rockIntent);
         });
 
         // Set a click listener on that Funk View
         textViewFunkActivity.setOnClickListener(v -> {
-            Intent funkIntent = new Intent(MainActivity. this, FunkActivity.class);
+            Intent funkIntent = new Intent(MainActivity.this, FunkActivity.class);
             startActivity(funkIntent);
         });
 
