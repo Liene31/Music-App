@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="blockStyleMainActivity">
+        <item name="textAllCaps">true</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/almendra_bold_italic</item>
+        <item name="android:textSize">20pt</item>
+    </style>
+
+    <style name="musicPlayerTextViewArtist">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="fontFamily">@font/chewy</item>
+    </style>
+
+    <style name="musicPlayerTextViewTitle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="fontFamily">@font/gudea</item>
+    </style>
+</resources>
+
+

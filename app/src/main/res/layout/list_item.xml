@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/jazz_background"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -13,12 +14,14 @@
         android:id="@+id/artist_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Artist"/>
+        android:fontFamily="@font/chewy"
+        tools:text="Artist" />
 
     <TextView
         android:id="@+id/song_title_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Title"/>
+        android:fontFamily="@font/gudea"
+        tools:text="Title" />
 
 </LinearLayout>

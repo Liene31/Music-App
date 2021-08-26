@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="jazz_background">#D6EFC7</color>
+    <color name="rock_background">#96BB7C</color>
+    <color name="funk_background">#184D47</color>
 </resources>

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcel;
 import android.widget.ListView;
 import java.util.ArrayList;
 
@@ -36,15 +35,14 @@ public class JazzActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        adapter.setOnItemClickListener(new SongsAdapter().OnItemClickListener(){
-            @Override
-            public void onItemClick (int position) {
-                Intent intent = new Intent(JazzActivity.this, MusicPlayer.class);
-                intent.putExtra("Song Item", songs.get(position));
 
-                startActivity(intent);
-            }
+        // Opens the MusicPlayer from the list
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+            Intent intent = new Intent(JazzActivity.this, MusicPlayer.class);
+            intent.putExtra("Song Item", songs.get(i));
+            startActivity(intent);
         });
+
 
     }
 }

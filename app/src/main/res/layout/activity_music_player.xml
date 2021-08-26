@@ -3,61 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:background="@drawable/custom_background"
     android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/music_player"/>
-
-    <TextView
-        android:id="@+id/title_music_player"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        tools:text="Song title"/>
-
-    <TextView
-        android:id="@+id/artist_music_player"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        tools:text="Artist"/>
-
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="50dp"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="@color/jazz_background"
+        android:orientation="vertical">
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/pause_button"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/greenish_player"/>
 
-        <ImageButton
+        <TextView
+            android:id="@+id/artist_music_player"
+            style="@style/musicPlayerTextViewArtist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/play_button"/>
+            tools:text="Artist" />
 
-        <ImageButton
+        <TextView
+            android:id="@+id/title_music_player"
+            style="@style/musicPlayerTextViewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/stop_button"/>
+            tools:text="Song title" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumbTint="#009688"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:backgroundTint="@color/jazz_background"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"
+                android:backgroundTint="@color/jazz_background"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:backgroundTint="@color/jazz_background"/>
 
 
-
-
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

@@ -9,16 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicApp">
-        <activity android:name=".MusicPlayer"></activity>
+        <activity
+            android:name=".MusicPlayer"
+            android:label="Music Player"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FunkActivity"
-            android:label="Funk" />
+            android:label="Funk"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RockActivity"
-            android:label="Rock" />
+            android:label="Rock"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".JazzActivity"
-            android:label="Jazz" />
+            android:label="Jazz"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +32,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
