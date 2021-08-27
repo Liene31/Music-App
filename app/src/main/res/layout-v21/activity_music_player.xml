@@ -1,75 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/custom_background"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
-        android:background="@color/jazz_background"
+        android:background="@drawable/custom_background"
         android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="25dp"
-            android:src="@drawable/greenish_player"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:id="@+id/artist_music_player"
-            style="@style/musicPlayerTextViewArtist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Artist" />
-
-        <TextView
-            android:id="@+id/title_music_player"
-            style="@style/musicPlayerTextViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Song title" />
-
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:thumbTint="#009688" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@color/jazz_background"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/jazz_background"
-                android:src="@drawable/back"
+            <ImageView
+                android:layout_width="235dp"
+                android:layout_height="234dp"
+                style="@style/musicPlayerImageView"
+                android:src="@drawable/greenish_player"
                 tools:ignore="ContentDescription" />
 
-            <ImageButton
+            <TextView
+                android:id="@+id/artist_music_player"
+                style="@style/musicPlayerTextViewArtist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/jazz_background"
-                android:src="@drawable/play"
-                tools:ignore="ContentDescription" />
+                tools:text="Artist" />
 
-            <ImageButton
+            <TextView
+                android:id="@+id/title_music_player"
+                style="@style/musicPlayerTextViewTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/jazz_background"
-                android:src="@drawable/forward"
-                tools:ignore="ContentDescription" />
+                tools:text="Song title" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/seek_bar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/jazz_background"
+                    android:src="@drawable/back"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/jazz_background"
+                    android:src="@drawable/play"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/jazz_background"
+                    android:src="@drawable/forward"
+                    tools:ignore="ContentDescription" />
 
 
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
